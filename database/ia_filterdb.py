@@ -40,8 +40,7 @@ async def save_file(media):
         'file_id': file_id,
         'file_name': file_name,
         'file_size': media.file_size,
-        'caption': media.caption.html if media.caption else None,
-        'created_at': datetime.now()
+        'caption': media.caption.html if media.caption else None
     }
     found1 = {'file_name': file_name}
     found = {'file_id': file_id}
